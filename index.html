@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Vue.Js</title>
+</head>
+<body>
+    <div id="app">      <!--Div criando para se connectar com elemento-->
+        {{msg}}         <!--Entre duas chaves, para realizar um baind entre html e o script-->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!--Primeiro carrega comando, após faz script-->
+
+    <script>
+        new Vue ({          //Criando estancia do vue.. e passando com parametro um objeto
+            
+            el: '#app',     //Mostrar vue seu elemento principal
+            data:{              //Dado em inglês, os dados que aparece no id
+                msg: 'Bruno Monte'  //mensagem para mostrar id
+            }
+            
+        })
+
+    </script>
+
+    
+</body>
+</html>
